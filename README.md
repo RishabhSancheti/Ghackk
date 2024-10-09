@@ -24,3 +24,11 @@ This project is a responsive landing page for the "Lore Olympus" Webtoon, showca
 1. **Clone the repository**
    ```bash
    git clone https://github.com/RishabhSancheti/Ghackk.git
+2.	Navigate to the project directory
+   cd lore-olympus-webtoon
+3.	Open the index.html file in your web browser to view the landing page.
+
+### Usage
+1.	Click on the navigation links to navigate between different sections of the page.
+2.	Hover over character images to reveal their details.
+3.	Use the carousel buttons to cycle through the supernatural manhwas.
