@@ -9,119 +9,120 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo">Lore Olympus</div>
+    <nav class="navbar" role="navigation">
+      <div class="logo" aria-label="Lore Olympus">Lore Olympus</div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#characters">Characters</a></li>
-        <li><a href="#carousel">Manhwa Carousel</a></li>
-        <li><a href="#">Read More</a></li>
+        <li><a href="#home" role="link">Home</a></li>
+        <li><a href="#characters" role="link">Characters</a></li>
+        <li><a href="#carousel" role="link">Manhwa Carousel</a></li>
+        <li><a href="#" role="link">Read More</a></li>
       </ul>
     </nav>
 
-    <section class="hero">
-        <div class="slideshow-container">
-          <div class="slide fade">
-            <img src="manhwabg.jpeg" alt="Hero 1" class="hero-image">
-          </div>
-          <div class="slide fade">
-            <img src="manhwabg2.jpeg" alt="Hero 2" class="hero-image">
-          </div>
-          <div class="slide fade">
-            <img src="manhwabg3.avif" alt="Hero 3" class="hero-image">
-          </div>
-          <div class="slide fade">
-            <img src="manhwabg4.jpeg" alt="Hero 4" class="hero-image">
-          </div>
-          <div class="slide fade">
-            <img src="manhwabg5.jpeg" alt="Hero 5" class="hero-image">
-          </div>
+    <section class="hero" role="banner">
+      <div class="slideshow-container" aria-label="Hero Image Slideshow">
+        <div class="slide fade" aria-hidden="true">
+          <img src="manhwabg.jpeg" alt="Hero 1" class="hero-image" loading="lazy">
         </div>
-        <div class="hero-content">
-          <div class="blurred-backdrop">
-            <h1 class="animated-text">Jaw Dropping Seen on Media</h1>
-            <button class="cta-btn">Read Now</button>
-          </div>
+        <div class="slide fade" aria-hidden="true">
+          <img src="manhwabg2.jpeg" alt="Hero 2" class="hero-image" loading="lazy">
         </div>
-      </section>
-    </header>
+        <div class="slide fade" aria-hidden="true">
+          <img src="manhwabg3.avif" alt="Hero 3" class="hero-image" loading="lazy">
+        </div>
+        <div class="slide fade" aria-hidden="true">
+          <img src="manhwabg4.jpeg" alt="Hero 4" class="hero-image" loading="lazy">
+        </div>
+        <div class="slide fade" aria-hidden="true">
+          <img src="manhwabg5.jpeg" alt="Hero 5" class="hero-image" loading="lazy">
+        </div>
+      </div>
+      <div class="hero-content" aria-labelledby="hero-title">
+        <div class="blurred-backdrop">
+          <h1 class="animated-text" id="hero-title">Jaw Dropping Seen on Media</h1>
+          <button class="cta-btn" aria-label="Read Now">Read Now</button>
+        </div>
+      </div>
+    </section>
+  </header>
 
-  <section class="characters">
-    <h2>Main Characters</h2>
-    <br>
-    <div class="character-grid">
-      <div class="character">
-        <img src="manhwa1.jpeg" alt="Character 1">
-        <div class="character-details">
-          <h3>Kai Jiho</h3>
-          <p>Kai is a quiet scholar with newfound dark powers. Torn between duty and control, he must harness his shadow abilities to protect his world.</p>
+  <main role="main">
+    <section class="characters" id="characters">
+      <h2>Main Characters</h2>
+      <br>
+      <div class="character-grid">
+        <div class="character" role="article" aria-labelledby="character1">
+          <img src="manhwa1.jpeg" alt="Character 1" loading="lazy">
+          <div class="character-details" id="character1">
+            <h3>Kai Jiho</h3>
+            <p>Kai is a quiet scholar with newfound dark powers.</p>
+          </div>
+        </div>
+        <div class="character" role="article" aria-labelledby="character2">
+          <img src="mahnwa2.jpeg" alt="Character 2" loading="lazy">
+          <div class="character-details" id="character2">
+            <h3>Mira Kang</h3>
+            <p>Mira wields dark magic but fears losing control.</p>
+          </div>
+        </div>
+        <div class="character" role="article" aria-labelledby="character3">
+          <img src="manhwa3.webp" alt="Character 3" loading="lazy">
+          <div class="character-details" id="character3">
+            <h3>Ryu Han</h3>
+            <p>Ryu is a fallen angel wandering the Earth.</p>
+          </div>
+        </div>
+        <div class="character" role="article" aria-labelledby="character4">
+          <img src="manhwa4.jpeg" alt="Character 4" loading="lazy">
+          <div class="character-details" id="character4">
+            <h3>Sora Min</h3>
+            <p>Sora is a warrior fighting to save her village.</p>
+          </div>
         </div>
       </div>
-      <div class="character">
-        <img src="mahnwa2.jpeg" alt="Character 2">
-        <div class="character-details">
-          <h3> Mira Kang</h3>
-          <p>Mira wields the Abyss’s dark magic but fears losing control. She must master her powers to save her world from destruction.</p>
-        </div>
-      </div>
-      <div class="character">
-        <img src="manhwa3.webp" alt="Character 1">
-        <div class="character-details">
-          <h3> Ryu Han</h3>
-          <p> Ryu, a fallen angel with no memory, wanders the Earth. His mysterious past holds the key to an upcoming celestial battle.</p>
-        </div>
-      </div>
-      <div class="character">
-        <img src="manhwa4.jpeg" alt="Character 1">
-        <div class="character-details">
-          <h3>Sora Min</h3>
-          <p>Sora is a fearless warrior fighting to save her cursed village. Her fierce loyalty drives her to face any challenge, no matter the cost.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="carousel">
-    <h2>Top Supernatural Manhwa</h2>
-    <br>
-    <div class="carousel-wrapper">
-      <button class="carousel-control left" id="carousel-prev">&#10094;</button>
-      <div class="carousel-container" id="carousel-container">
-        <div class="carousel-item">
-          <img src="carmanhwa1.jpeg" class="Manhwa1">
-          <h3>Eclipse of the Shadow Queen</h3>
-          <p>After a rare celestial event, Jin, a humble scholar, discovers that she is the reincarnation of the ancient Shadow Queen. With dark forces awakening, Jin must embrace her past life and learn to control her powers, while navigating treacherous alliances between gods, demons, and humans. Time is running out, and only she can prevent a catastrophe that threatens the realms.</p>
-        </div>
-        <div class="carousel-item">
-          <img src="carmanhwa2.jpeg" class="Manhwa2">
-          <h3>Wings of the Fallen</h3>
-          <p>In a world where angels walk among humans, Hyeon is a fallen angel stripped of her wings and memory. While trying to understand her mysterious past, she teams up with a group of misfits who all have secrets of their own. Together, they uncover a prophecy about an impending war between Heaven and Hell, and only Hyeon can stop it—if she regains her true power.</p>
-        </div>
-        <div class="carousel-item">
-          <img src="carmanhwa3.jpeg" class="Manhwa3">
-          <h3>The Cursed Moon</h3>
-          <p>Every full moon, the quiet village of Gwiyang is haunted by a curse that turns its residents into bloodthirsty creatures. Seol, a fierce young woman, embarks on a journey to break the curse after her younger brother becomes afflicted. Alongside a mysterious stranger who claims to know the origins of the curse, Seol faces supernatural trials that challenge everything she believes.</p>
-        </div>
-        <div class="carousel-item">
-            <img src="carmanhwa4.jpeg" class="Manhwa4">
+    <section class="carousel" id="carousel" role="region" aria-labelledby="carousel-title">
+      <h2 id="carousel-title">Top Supernatural Manhwa</h2>
+      <br>
+      <div class="carousel-wrapper">
+        <button class="carousel-control left" id="carousel-prev" aria-label="Previous Slide">&#10094;</button>
+        <div class="carousel-container" id="carousel-container" aria-live="polite">
+          <div class="carousel-item" role="figure">
+            <img src="carmanhwa1.jpeg" class="Manhwa1" alt="Eclipse of the Shadow Queen" loading="lazy">
+            <h3>Eclipse of the Shadow Queen</h3>
+            <p>After a rare celestial event, Jin, a humble scholar, discovers that she is the reincarnation of the ancient Shadow Queen. With dark forces awakening, Jin must embrace her past life and learn to control her powers, while navigating treacherous alliances between gods, demons, and humans. Time is running out, and only she can prevent a catastrophe that threatens the realms.</p>
+          </div>
+          <div class="carousel-item" role="figure">
+            <img src="carmanhwa2.jpeg" class="Manhwa2" alt="Wings of the Fallen" loading="lazy">
+            <h3>Wings of the Fallen</h3>
+            <p>In a world where angels walk among humans, Hyeon is a fallen angel stripped of her wings and memory. While trying to understand her mysterious past, she teams up with a group of misfits who all have secrets of their own. Together, they uncover a prophecy about an impending war between Heaven and Hell, and only Hyeon can stop it—if she regains her true power.</p>
+          </div>
+          <div class="carousel-item" role="figure">
+            <img src="carmanhwa3.jpeg" class="Manhwa3" alt="The Cursed Moon" loading="lazy">
+            <h3>The Cursed Moon</h3>
+            <p>Every full moon, the quiet village of Gwiyang is haunted by a curse that turns its residents into bloodthirsty creatures. Seol, a fierce young woman, embarks on a journey to break the curse after her younger brother becomes afflicted. Alongside a mysterious stranger who claims to know the origins of the curse, Seol faces supernatural trials that challenge everything she believes.</p>
+          </div>
+          <div class="carousel-item" role="figure">
+            <img src="carmanhwa4.jpeg" class="Manhwa4" alt="Phantom Seer" loading="lazy">
             <h3>Phantom Seer</h3>
-            <p> Haru, an ordinary high school student, suddenly develops the ability to see malevolent spirits after a near-death experience. Haunted by terrifying phantoms, she is guided by a mysterious girl who claims to be a phantom seer—a medium able to control spirits. Together, they must confront powerful apparitions and prevent an ancient evil from rising again.</p>
+            <p>Haru, an ordinary high school student, suddenly develops the ability to see malevolent spirits after a near-death experience. Haunted by terrifying phantoms, she is guided by a mysterious girl who claims to be a phantom seer—a medium able to control spirits. Together, they must confront powerful apparitions and prevent an ancient evil from rising again.</p>
           </div>
-          <div class="carousel-item">
-            <img src="mahnwa2.jpeg" class="Manhwa5">
+          <div class="carousel-item" role="figure">
+            <img src="mahnwa2.jpeg" class="Manhwa5" alt="Requiem of the Forgotten" loading="lazy">
             <h3>Requiem of the Forgotten</h3>
             <p>Yumi is a spirit medium who helps lost souls cross over to the afterlife. However, she encounters a strange boy named Kaito who refuses to move on. As they uncover the dark history behind Kaito’s death, they discover a plot that binds the living and the dead together in a curse that threatens to collapse both realms.</p>
           </div>
-          <div class="carousel-item">
-            <img src="manhwa4.jpeg" class="Manhwa6">
+          <div class="carousel-item" role="figure">
+            <img src="manhwa4.jpeg" class="Manhwa6" alt="Sorceress of the Abyss" loading="lazy">
             <h3>Sorceress of the Abyss</h3>
             <p>Hye-rin, a young sorceress, is chosen to become the next wielder of the Abyss, a dark force that grants unimaginable power but devours the soul of its user. While training to control the Abyss, she must fend off enemies who seek the power for themselves. Along her journey, Hye-rin must choose between saving her world or surrendering to the darkness within.</p>
           </div>
-        
+        </div>
+        <button class="carousel-control right" id="carousel-next" aria-label="Next Slide">&#10095;</button>
       </div>
-      <button class="carousel-control right" id="carousel-next">&#10095;</button>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <script src="app.js"></script>
 </body>
